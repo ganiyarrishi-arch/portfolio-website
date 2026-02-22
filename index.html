@@ -4,6 +4,20 @@
     <title>Rishi | Mechanical Engineer</title>
     <link rel="stylesheet" href="style.css?v=3">
 </head>
+<script>
+window.addEventListener("scroll", function() {
+    const cards = document.querySelectorAll(".card");
+
+    cards.forEach(card => {
+        const position = card.getBoundingClientRect().top;
+        const screenHeight = window.innerHeight;
+
+        if (position < screenHeight - 100) {
+            card.classList.add("show");
+        }
+    });
+});
+</script>
 
 <body>
 
