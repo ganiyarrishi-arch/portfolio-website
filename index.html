@@ -58,6 +58,9 @@ window.addEventListener("scroll", function() {
 <!-- CONTACT SECTION -->
 <section id="contact" class="card">
     <h3>Contact Me</h3>
+    <p>Button Click Counter:</p>
+<p id="count">0</p>
+<button onclick="increaseCount()">Click Me</button>
 
     <ul>
         <li>Automobiles</li>
@@ -69,6 +72,13 @@ window.addEventListener("scroll", function() {
         Visit My Instagram
     </a>
 </section>
+<script>
+let count = 0;
 
+function increaseCount() {
+    count++;
+    document.getElementById("count").innerText = count;
+}
+</script>
 </body>
 </html>
