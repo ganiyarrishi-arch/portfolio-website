@@ -43,8 +43,36 @@ body {
     background-color: #1e293b;
     padding: 30px;
     border-radius: 15px;
-    width: 350px;
+    width: 90%;
+    max-width: 500px;
     text-align: center;
     box-shadow: 0 10px 25px rgba(0,0,0,0.5);
-    margin: 40px auto;   /* centers card */
+    margin: 40px auto;
+}
+html {
+    scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 15px 20px;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
 }
