@@ -1,87 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Rishi | Mechanical Engineer</title>
-    <link rel="stylesheet" href="style.css?v=4">
+    <meta charset="UTF-8">
+    <title>Rishi Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<nav>
-    <div class="logo">Rishi</div>
-    <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <nav>
+        <div class="logo">Rishi</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<!-- HOME SECTION -->
-<section id="home" class="card">
-    <img src="https://via.placeholder.com/150" alt="Rishi">
+    <section id="home" class="card">
+        <h1>Hi, I'm Rishi</h1>
+        <p>Mechanical Engineering Student</p>
+    </section>
 
-    <h1>Hi, I'm Rishi</h1>
-    <h2>Mechanical Engineering Student</h2>
+    <section id="projects" class="card">
+        <h2>My Projects</h2>
+        <p>Mechanical design projects coming soon...</p>
+    </section>
 
-    <p>I love automobiles, CAD design and building real-world solutions.</p>
-</section>
+    <section id="contact" class="card">
+        <h2>Contact Me</h2>
+        <p>Email: ganiyarrishi@gmail.com</p>
+    </section>
 
-<!-- PROJECTS SECTION -->
-<section class="card">
-    <h3 id="projects">My Projects</h3>
-
-    <div class="project">
-        <h4>Mini Engine Model</h4>
-        <p>Designed and assembled a working IC engine model for academic demonstration.</p>
-    </div>
-
-    <div class="project">
-        <h4>Portfolio Website</h4>
-        <p>Built and deployed my personal portfolio using HTML, CSS and GitHub Pages.</p>
-    </div>
-</section>
-
-<!-- CONTACT SECTION -->
-<section id="contact" class="card">
-    <h3>Contact Me</h3>
-
-    <p>Button Click Counter:</p>
-    <p id="count">0</p>
-    <button onclick="increaseCount()">Click Me</button>
-
-    <ul>
-        <li>Automobiles</li>
-        <li>Gym</li>
-        <li>Tech</li>
-    </ul>
-
-    <a href="https://instagram.com/rish7.gg" target="_blank">
-        Visit My Instagram
-    </a>
-</section>
-
-<!-- ALL JAVASCRIPT AT BOTTOM -->
-<script>
-let count = 0;
-
-function increaseCount() {
-    count++;
-    document.getElementById("count").innerText = count;
-}
-
-window.addEventListener("scroll", function() {
-    const cards = document.querySelectorAll(".card");
-
-    cards.forEach(card => {
-        const position = card.getBoundingClientRect().top;
-        const screenHeight = window.innerHeight;
-
-        if (position < screenHeight - 100) {
-            card.classList.add("show");
-        }
-    });
-});
-</script>
-
+    <script src="script.js"></script>
 </body>
 </html>
